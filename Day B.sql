@@ -83,3 +83,38 @@ SELECT ROLLNO , NAME FROM STUDENT;
 
 SELECT * FROM V1;
 DROP VIEW V1;
+
+
+
+
+
+SET AUTOCOMMIT=0;
+COMMIT;
+ROLLBACK;
+
+SET SQL_SAFE_UPDATES = 0;
+
+-- Step 1: Turn off automatic saving
+SET AUTOCOMMIT=0;
+
+-- Step 2: Make a temporary change (e.g., mistakenly changing Rupali's marks)
+UPDATE STUDENT SET MARKS = 0 WHERE NAME = 'RUPALI'; 
+
+-- Verification: If you run SELECT * FROM STUDENT, you will see Rupali's marks as 0.
+SELECT * FROM STUDENT;
+
+-- Step 3: Realize the mistake and undo it
+ROLLBACK;
+
+-- Result: Rupali's marks are restored back to 25.
+
+-- Step 4: Make a correct change
+UPDATE STUDENT SET MARKS = 30 WHERE NAME = 'RUPALI';
+
+-- Step 5: Save the correct change permanently
+COMMIT;
+
+-- Result: The marks are now permanently 30. A ROLLBACK now will not change it back.
+
+
+
