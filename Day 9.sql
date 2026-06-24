@@ -47,3 +47,14 @@ WHERE MARKS <20;
 SELECT * FROM STUDENT;
 
 
+
+# indexes
+-- This command will show you both the PRIMARY index and the 'idx_city' index
+
+SHOW INDEX FROM STUDENT;   #SHOWS INDEX
+SELECT* FROM STUDENT;
+
+-- If you have already renamed the column to FULLNAME:
+CREATE INDEX idx_name ON STUDENT(NAME);
+ 
+ -- INDEXS CONSUME DESK SPACE. ITS SLOW DOWN INSERT ,UPDATE, DELETE OPERATIONS, SO DONT CREATE INDEXES ON ALL COLIUMNS .
