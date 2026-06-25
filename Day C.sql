@@ -127,3 +127,34 @@ SELECT * FROM STUDENT WHERE NAME LIKE '_A_H%';
 # DISTINCT : UNIQUE ELEMENT
 
 SELECT DISTINCT CITY FROM STUDENT;
+
+
+
+
+#Functions 
+# String fuctions
+
+use db;
+SELECT * FROM STUDENT;  
+ 
+#  length fuction
+
+SELECT name, Length(name) as name_length FROM Student;
+ 
+#  LOWER() UPPER()
+
+SELECT name, LOWER(name) As Lowercase_name FROM Student;     
+SELECT name,UPPER(name) As Uppercase_name FROM Student; 
+  
+# CONCAT() : use to combine two columns 
+
+SELECT  CONCAT(name, '<',rollno, '>') AS Student_detail from Student;
+    
+#DATE FUNCTION 
+
+SELECT NOW();           #current date and time gives
+
+
+#Mathematical fuction: mod() ROUND() FLOOR() CEIL()
+
+#condition fuction if()
