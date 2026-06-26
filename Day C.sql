@@ -25,6 +25,24 @@ CALL GetUsers();
 DROP PROCEDURE IF EXISTS GetUsers;
 
 
+#OR WE CAN CREATE TABLE INSIDE IN STIRE PROCEDURE
+--    DELIMITER $$
+-- CREATE PROCEDURE ADD_STUDENTS(
+-- 	IN S_ROLLNO INT(2),
+-- 	IN S_NAME VARCHAR(50),
+-- 	IN S_MARKS INT,
+-- 	IN S_GRADE VARCHAR(1),
+-- 	IN S_CITY VARCHAR(20)
+-- )
+-- BEGIN
+--      INSERT INTO Studenttt (rollno , name , marks , grade , City)
+--      VALUES (S_ROLLNO , S_NAME , S_MARKS, S_GRADE , S_CITY);
+--     SELECT * FROM Studenttt;
+-- END $$
+-- DELIMITER ;
+
+-- CALL ADD_STUDENTS('130' , 'VAIDEHI' , '80' , 'A' , 'PUNE');
+
 
 
 
