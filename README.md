@@ -78,3 +78,14 @@ DAY B :
 2. VIEWS
 3. COMMIT & ROLLBACK;
 
+
+DAY C : 
+1. STORED PROCEDURES 
+2. TRIGGER
+3. WILDCARD OPERATOR ( % - )
+4. DISTINCT : UNIQUE ELEMENT
+   
+6. String fuctions (length fuction, LOWER() UPPER(),CONCAT() ,DATE FUNCTION
+7. Mathematical fuction: mod() ROUND() FLOOR() CEIL()
+8. condition fuction if()
+
