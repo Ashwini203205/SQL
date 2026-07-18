@@ -89,3 +89,6 @@ DAY C :
 7. Mathematical fuction: mod() ROUND() FLOOR() CEIL()
 8. condition fuction if()
 
+DAY D:
+CTE: COMMON TABLE EXPRESSION
+
