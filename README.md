@@ -1,4 +1,4 @@
-# SQL
+# SQL. (apna college 3hr 15 min Youtube video)
 
 DAY 1: SHOW,CREATE,DROP,USE,CREATE TABLE,INSERT INTO,SELECT * FROM.
 
